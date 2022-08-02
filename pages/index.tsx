@@ -1,5 +1,6 @@
 import { Box } from "@mui/material";
-import { Hero, ProjectList } from "~/components/home";
+import { Experience, Hero, ProjectList } from "~/components/home";
+
 import { MainLayout } from "~/components/layout";
 import { NextPageWithLayout } from "~/models";
 
@@ -8,6 +9,7 @@ const Home: NextPageWithLayout = () => {
     <Box component="section">
       <Hero />
       <ProjectList />
+      <Experience />
     </Box>
   );
 };

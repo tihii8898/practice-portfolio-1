@@ -50,23 +50,30 @@ export function ProjectList(props: ProjectListProps) {
   return (
     <Container
       sx={{
-        paddingY: 7,
-        paddingX: 19.5,
+        paddingTop: 7,
+
         marginBottom: 10,
       }}
     >
-      <Typography variant="h2" mb={10}>
+      <Typography variant="h2" mb={5}>
         Ultimos Projetos
       </Typography>
       <Stack
         direction={{ xs: "column", md: "row" }}
         justifyContent={"space-between"}
         spacing={2.5}
+        alignItems="center"
       >
-        {projectList.map((project) => (
-          <Fragment key={project.id}>
+        {projectList.map((project, index) => (
+          <Box
+            key={index}
+            sx={{
+              minWidth: "327px",
+              paddingX: { xs: 2, md: 0 },
+            }}
+          >
             <ProjectCard project={project} />
-          </Fragment>
+          </Box>
         ))}
       </Stack>
       <Stack direction="row" justifyContent="flex-end">
