@@ -34,6 +34,7 @@ export let theme = createTheme({
             maxWidth: "330px",
           },
         },
+
         maxWidthMd: {
           maxWidth: "960px",
           "@media (min-width: 900px)": {
