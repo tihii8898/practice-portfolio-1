@@ -35,5 +35,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 ## Design
 Designed by Rafael Jr
+
 Figma Community profile: https://www.figma.com/@rafo
+
 Figma Design: https://www.figma.com/community/file/1126581136185110141
