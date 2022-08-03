@@ -1,4 +1,3 @@
-import { MenuTwoTone } from "@mui/icons-material";
 import { Box, Stack, Typography } from "@mui/material";
 
 import Image from "next/image";
@@ -19,7 +18,7 @@ export default function HeaderDesktop(props: HeaderDesktopProps) {
     >
       <Stack direction="row" justifyContent="space-between" alignItems="center">
         <Box>
-          <Image src={logo} />
+          <Image src={logo} alt="logo" />
 
           <Typography display="inline" variant="h5" ml={1} fontWeight="bold">
             Achtenberg

@@ -1,13 +1,12 @@
 import { Box, Container, Divider, Stack, Typography } from "@mui/material";
-import Image from "next/image";
-import * as React from "react";
-import Vector1 from "~/images/Vector1.svg";
-import hi from "~/images/temp/hi.jpg";
-import react from "~/images/temp/react.webp";
-import nodejs from "~/images/temp/nodejs.webp";
-import mysql from "~/images/temp/mysql.webp";
-import { Skill } from "~/models";
 import { lightBlue } from "@mui/material/colors";
+import Image from "next/image";
+import hi from "~/images/temp/hi.jpg";
+import mysql from "~/images/temp/mysql.webp";
+import nodejs from "~/images/temp/nodejs.webp";
+import react from "~/images/temp/react.webp";
+import Vector1 from "~/images/Vector1.svg";
+import { Skill } from "~/models";
 
 export interface ExperienceProps {}
 
@@ -61,7 +60,7 @@ export function Experience(props: ExperienceProps) {
           >
             Sobre mim
           </Typography>
-          <Image src={Vector1} />
+          <Image src={Vector1} alt="vector" />
         </Box>
         <Stack
           direction={{ xs: "column-reverse", md: "row" }}
@@ -111,6 +110,7 @@ export function Experience(props: ExperienceProps) {
                       src={skill.localUrl || skill.url}
                       height={143}
                       width={143}
+                      alt={skill.name}
                       style={{
                         background: "transparent",
                         boxShadow:
@@ -130,7 +130,7 @@ export function Experience(props: ExperienceProps) {
               maxWidth: { xs: "100px", md: "394px" },
             }}
           >
-            <Image src={hi} width={394} height={470} />
+            <Image src={hi} width={394} height={470} alt="hi" />
           </Box>
         </Stack>
       </Stack>

@@ -1,6 +1,5 @@
 import { Box, Button, Container, Stack, Typography } from "@mui/material";
 import Image from "next/image";
-import * as React from "react";
 
 export interface HeroProps {}
 
@@ -21,6 +20,7 @@ export function Hero(props: HeroProps) {
             layout="fixed"
             width={65}
             height={65}
+            alt="avatar"
             style={{
               borderRadius: "50%",
             }}

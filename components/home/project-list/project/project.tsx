@@ -1,4 +1,4 @@
-import { GitHub, Language, Tag } from "@mui/icons-material";
+import { GitHub, Language } from "@mui/icons-material";
 import { Box, Chip, Stack, Typography } from "@mui/material";
 import Image from "next/image";
 import Link from "next/link";
@@ -36,6 +36,7 @@ export function ProjectCard({ project }: ProjectProps) {
           src={project.imageUrl}
           width={300}
           height={285}
+          alt={project.title}
           style={{
             borderRadius: "18px",
           }}
@@ -56,7 +57,7 @@ export function ProjectCard({ project }: ProjectProps) {
           </a>
         </Link>
         <Link href={project.deployUrl} passHref>
-          <a target="_blank" ref="nofollow">
+          <a target="_blank">
             <Language />
             <Typography
               sx={{

@@ -3,7 +3,6 @@ import { Box, Container, Divider, Stack, Typography } from "@mui/material";
 import { lightBlue } from "@mui/material/colors";
 import Image from "next/image";
 import Link from "next/link";
-import * as React from "react";
 import footerImg from "~/images/temp/footerImg.webp";
 
 export interface FooterProps {}
@@ -75,6 +74,7 @@ export function Footer(props: FooterProps) {
         <Box display={{ xs: "none", md: "block" }}>
           <Image
             src={footerImg}
+            alt="footer image"
             style={{
               backgroundColor: lightBlue[400],
               borderRadius: "35px",

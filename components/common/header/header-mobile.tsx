@@ -34,7 +34,7 @@ export default function HeaderMobile(props: HeaderMobileProps) {
     >
       <Stack direction="row" justifyContent="space-between" alignItems="center">
         <Box>
-          <Image src={logo} />
+          <Image src={logo} alt="logo" />
 
           <Typography display="inline" variant="h5" ml={1} fontWeight="bold">
             Achtenberg
